@@ -1,0 +1,26 @@
+{"platesDetected": [
+    {
+        "plate" : "FSADE-5453",
+        "date" : "3/23/2019",
+        "violate" : false,
+        "messageSent" : false
+
+    },
+    {
+        "plate" : "FS434DE-5453",
+        "date" : "3/23/2019",
+        "violate" : true,
+        "messageSent" : false
+
+    },
+    {
+        "plate" : "FSADE-5453",
+        "date" : "3/23/2019",
+        "violate" : true,
+        "messageSent" : true
+
+    },
+    ]
+}
+
+    
