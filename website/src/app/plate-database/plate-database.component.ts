@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-plate-database',
@@ -8,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 export class PlateDatabaseComponent implements OnInit {
   platedata;
   
-  constructor() { }
+  constructor(private _route: ActivatedRoute) { }
 
   ngOnInit() {
+    //this.zipCode = this._route.snapshot.params['zip'];
+    //this.country = this._route.snapshot.params['us'];
+      console.log(this._route.snapshot.params['id']);
       this.platedata = {"platesDetected": [
         {
             "plate" : "FSADE-5453",
@@ -29,14 +33,21 @@ export class PlateDatabaseComponent implements OnInit {
         {
             "plate" : "FSADE-5453",
             "date" : "3/23/2019",
-            "violate" : true,
+            "violate" : false,
             "messageSent" : true
     
         },
+        {
+          "plate" : "F7809324SADE-5453",
+          "date" : "3/23/2019",
+          "violate" : false,
+          "messageSent" : false
+  
+      },
         ]
     };
       console.log(this.platedata);
   }
 
-  
+
 }
