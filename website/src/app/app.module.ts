@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { PlateDatabaseComponent } from './plate-database/plate-database.component';
+import { routing } from './app.router';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { PlateDatabaseComponent } from './plate-database/plate-database.componen
     PlateDatabaseComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    routing,
   ],
   providers: [],
   bootstrap: [AppComponent]
