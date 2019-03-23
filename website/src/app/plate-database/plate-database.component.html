@@ -1,0 +1,12 @@
+<h1>Plate Database:</h1>
+<div *ngFor="let plate of platedata.platesDetected" 
+      [ngClass]="{'alert-danger' : plate.violate}" 
+      class="card"
+      style="margin: 10px;">
+  <h3 class="card-header">{{plate.plate}}</h3>
+  <div class="card-body">
+    <p>Starting timestamp: {{plate.date}}</p>
+    <p>Violation: {{plate.violate}}</p>
+    <p>messageSent: {{plate.messageSent}}</p>
+  </div>
+</div>
