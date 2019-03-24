@@ -11,6 +11,8 @@
   
 </form>
 </div>
+
+
 <div *ngFor="let plate of platedata.platesDetected" 
       [ngClass]="{'alert-danger' : plate.violate}" 
       class="card"
