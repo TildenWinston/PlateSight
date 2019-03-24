@@ -59,5 +59,9 @@ export class PlateDatabaseComponent implements OnInit {
     
   }
 
+  dataLog(){
+    console.log("Data Log Called");
+  }
+
 
 }

@@ -5,14 +5,17 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { PlateDatabaseComponent } from './plate-database/plate-database.component';
 import { routing } from './app.router';
+import { ProfileEditComponent } from './profile-edit/profile-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PlateDatabaseComponent
+    PlateDatabaseComponent,
+    ProfileEditComponent
   ],
   imports: [
     BrowserModule,
+     
     FormsModule,
     routing,
   ],

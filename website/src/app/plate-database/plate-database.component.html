@@ -1,3 +1,6 @@
+<br>
+<div style="margin:5px" >
+<h1>Plate Database:</h1>
 <form (ngSubmit)="onSubmit(location)" name="getLocation" autocomplete="off">
 
   <label id="location">Location:
@@ -7,8 +10,7 @@
   <input type="submit"/>
   
 </form>
-
-<h1>Plate Database:</h1>
+</div>
 <div *ngFor="let plate of platedata.platesDetected" 
       [ngClass]="{'alert-danger' : plate.violate}" 
       class="card"
