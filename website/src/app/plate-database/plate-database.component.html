@@ -1,3 +1,13 @@
+<form (ngSubmit)="onSubmit(location)" name="getLocation" autocomplete="off">
+
+  <label id="location">Location:
+  <input id="location" autocomplete="off" name="location" [(ngModel)]="location"/>
+  </label> 
+
+  <input type="submit"/>
+  
+</form>
+
 <h1>Plate Database:</h1>
 <div *ngFor="let plate of platedata.platesDetected" 
       [ngClass]="{'alert-danger' : plate.violate}" 
@@ -8,5 +18,6 @@
     <p>Starting timestamp: {{plate.date}}</p>
     <p>Violation: {{plate.violate}}</p>
     <p>messageSent: {{plate.messageSent}}</p>
+    <a routerLink="/platesearch/{{plate.plate}}">Plate Search</a>
   </div>
 </div>
