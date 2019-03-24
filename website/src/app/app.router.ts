@@ -5,7 +5,7 @@ const routes = [
     { path: 'platesearch',  component: PlateDatabaseComponent },
     { path: 'platesearch/:id',      component: PlateDatabaseComponent },
     { path: '', component: PlateDatabaseComponent},
-    { path: '**', component: PlateDatabaseComponent},
+    //{ path: '**', component: PlateDatabaseComponent},
 
 ];
 

@@ -1,14 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
+
 @Component({
   selector: 'app-plate-database',
   templateUrl: './plate-database.component.html',
   styleUrls: ['./plate-database.component.css']
 })
+
 export class PlateDatabaseComponent implements OnInit {
   platedata;
-  
+  public location;
+
   constructor(private _route: ActivatedRoute) { }
 
   ngOnInit() {
@@ -47,6 +50,13 @@ export class PlateDatabaseComponent implements OnInit {
         ]
     };
       console.log(this.platedata);
+  }
+
+  onSubmit(){
+    
+    console.log("City: " + this.location);
+    
+    
   }
 
 
